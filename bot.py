@@ -1,7 +1,8 @@
-from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
+import os
+from telegram import Update
+from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8346804559:AAHnlhrAH6FR2hVY--mrbh3sQ5flPi_Aodw"
+TOKEN = os.getenv("BOT_TOKEN")
 SUPPORT_NUMBER = "+212614055191"
 SUPPORT_LINK = "https://t.me/Texas4WinMoRoCCo"
 
